@@ -1,0 +1,95 @@
+ @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+        :root {
+            --main-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --bg-body: #fffcfcff;
+            --bg-card: #ffffff;
+            --text-main: #212529;
+        }
+
+        body.dark-mode {
+            --bg-body: #121416;
+            --bg-card: #1e2125;
+            --text-main: #f8f9fa;
+        }
+
+        body {
+            background: var(--bg-body);
+            color: var(--text-main);
+            font-family: "Open Sans", sans-serif;
+            margin: 0; padding: 0;
+            display: flex; height: 100vh;
+            overflow: hidden;
+            transition: background 0.3s ease;
+        }
+
+        .side-navbar {
+            width: 100px;
+            background: var(--bg-card);
+            border-right: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex; flex-direction: column;
+            align-items: center; padding-top: 2rem;
+            z-index: 10; box-shadow: var(--main-shadow);
+        }
+
+        .log {
+            width: 80px; height: 80px;
+            object-fit: cover; border-radius: 50%;
+            border: 1px blue solid; padding: 2px;
+            box-shadow: 1px 1px 20px blue;
+        }
+
+        .nav-btn {
+            background: none; border: none;
+            width: 55px; height: 55px;
+            border-radius: 16px; color: #b0b8c6;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.3s ease; cursor: pointer;
+            margin-bottom: 2.5rem; position: relative;
+        }
+
+        .nav-btn:hover { background-color: #eef2ff; color: #406ff3; transform: translateY(-2px); }
+        /* This class makes the icon blue */
+        .nav-btn.active { background-color: #406ff3; color: white; box-shadow: 0 8px 20px rgba(64, 111, 243, 0.4); }
+
+        .main-content { flex: 1; padding: 2rem 4rem; overflow-y: auto; position: relative; }
+
+        .page-section { display: none; animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        .page-section.active-section { display: block; }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .custom-table, .card, .custom-card {
+            background: var(--bg-card) !important;
+            color: var(--text-main); border: none;
+            border-radius: 15px; box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .custom-table table, .custom-table th, .custom-table td {
+            background-color: var(--bg-card) !important;
+            color: var(--text-main) !important;
+            border-color: rgba(128, 128, 128, 0.1) !important;
+        }
+
+        .settings-dropdown {
+            position: absolute; bottom: 0; left: 75px;
+            background: var(--bg-card); width: 260px;
+            border-radius: 15px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 20px; display: none; z-index: 1000;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .settings-dropdown.show { display: block; }
+        .action-col { visibility: hidden; }
+        .bg-transparent-custom { background: transparent !important; }
+
+        .admin-profile-img {
+            width: 120px; height: 120px;
+            object-fit: cover; border-radius: 50%;
+            border: 3px solid #406ff3;
+            padding: 4px; box-shadow: 0 5px 15px rgba(64, 111, 243, 0.2);
+        }
