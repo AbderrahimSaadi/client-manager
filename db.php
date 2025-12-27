@@ -69,10 +69,10 @@ if (isset($_POST['save_client'])) {
 
     if (!empty($id)) {
         $query = "UPDATE client SET nom='$nom', prenom='$prenom', sexe='$sexe', ville='$ville', loisirs='$loisirs', image='$imagePath' WHERE id=$id";
-        $msg = "Updated Successfully!";
+        $msg = "Modifié avec succès !";
     } else {
         $query = "INSERT INTO client (nom, prenom, sexe, ville, loisirs, image) VALUES ('$nom','$prenom','$sexe','$ville','$loisirs','$imagePath')";
-        $msg = "Added Successfully!";
+        $msg = "Ajouté avec succès !";
     }
 
     if (mysqli_query($connect, $query)) {
