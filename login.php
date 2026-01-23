@@ -4,18 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-     <title>Client Management</title>
+    <title>Client Management</title>
     <link rel="icon" href="assets/icon_logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=VT323&family=Montserrat:wght@300;600&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="style_login.css">
-      
+    <link rel="stylesheet" href="style_login.css">
+
 </head>
+
 <body>
     <div class="stage" role="main" id="main-content">
         <div class="brand" aria-hidden="false">
-            <div class="logo" aria-hidden="true">
-            </div>
+                <div class="logo"
+                    style="background-image: url('assets/image_1.png') !important; background-size: cover; background-position: center; width: 170px; height: 170px; border-radius: 50%; display: block;">
+                </div>
+        
 
         </div>
 
