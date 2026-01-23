@@ -7,9 +7,9 @@
                                         style="width: 80%; max-width: 500px; border-top: 4px solid #406ff3;">
                                         <div class="text-center mb-4">
                                                 <div class="mb-3">
-                                                        <img src="assets/image_1.png"
+                                                        <img src="../assets/image_1.png"
                                                                 onerror="this.src='https://via.placeholder.com/120?text=Admin'"
-                                                                class="admin-profile-img">
+                                                                class="logo">
                                                 </div>
                                                 <h3 class="fw-bold">Information de Admin</h3>
                                         </div>

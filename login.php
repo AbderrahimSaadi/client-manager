@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>LOGIN</title>
+     <title>Client Management</title>
+    <link rel="icon" href="assets/icon_logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=VT323&family=Montserrat:wght@300;600&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="style_login.css">
+      
 </head>
-
 <body>
     <div class="stage" role="main" id="main-content">
         <div class="brand" aria-hidden="false">
@@ -21,7 +22,7 @@
         <section class="card" id="card" role="region" aria-label="Terminal Login">
             <h1>LOGIN ADMIN</h1>
 
-            <form autocomplete="off" id="login-form">
+            <form autocomplete="off" id="login-form" action="#">
 
                 <div class="field">
                     <input id="user" type="text" placeholder="Email" />
